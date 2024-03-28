@@ -1,0 +1,226 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TripBoss</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- fonts -->
+    <link rel="stylesheet" href="font/fonts.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    </style>
+</head>
+
+<body class="">
+    <!-- navbar  -->
+    <nav class="navbar">
+        <div class="container flex">
+            <img src="images/logo2.png " class="logo" alt="Logo" title="TripBoss">
+            <a href="index.html" class="site-brand">
+                Trip<span>Boss</span>
+            </a>
+
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="tourse.html" class="nav-link">Tours</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="review.html" class="nav-link">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ 
+
+    <!-- header -->
+    <header id="contact" class="flex header-sm">
+        <div class="container">
+            <div class="header-title">
+                <h1>Contact</h1>
+                <p>Would you like to ask a question regarding our services? TripBoss Specialists are here to advise and assist you as you design your ultimate travel &amp; touring itinerary. One of our specialists will contact you within 1 business day</p>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- contact section -->
+    <section id="contact" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">get in touch with us</span>
+                <h2 class="lg-title">contact us</h2>
+            </div>
+
+
+            <section class="registration">
+                <div class="register-form">
+                    <form action="payment.html" onsubmit="return validateform()">
+                     <div class="a">
+                        <label for="" class="a1">Name &nbsp;</label>
+                        <input type="text" name="myname1" placeholder="Name" id="name" required=""><br>
+                        <label for="" class="a1">Email &nbsp; </label> 
+                        <input type="email" name="myemail" placeholder="Email-Id" id="" required=""><br>
+                        <label for="" class="a1">Mo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="tel" name="myphone" placeholder="Phone No." id="phonenum" required=""> <br>
+                        <label for="" class="a1">Age &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="number" name="myage" placeholder="Age" id="" required=""> <br> <br>
+                        <label for=""> Departure</label>
+                        <input type="date" name="departuredate" id="" required=""> <br>
+                        <label for=""> Return &nbsp; &nbsp;&nbsp;&nbsp; </label>
+                        <input type="date" name="returndate" id="" required=""> <br>
+                        <h4>Gender &nbsp;</h4>
+                        <input type="radio" name="mygender" id="Male" required="">
+                        <label for="Male">Male  &nbsp; &nbsp; &nbsp;</label>
+                        <input type="radio" name="mygender" id="Female"> 
+                        <label for="Female">Female  &nbsp; &nbsp; &nbsp;</label>
+                        <input type="radio" name="mygender" id="Other"> 
+                        <label for="Other">Other  &nbsp; &nbsp; &nbsp;</label>
+                        <h4>Travel Destination</h4>
+                        <input type="checkbox" name="td" id="Kashmir">
+                        <label for="Kashmir">Kashmir &nbsp; &nbsp; &nbsp;</label>
+                        <input type="checkbox" name="td" id="Istanbul"> 
+                        <label for="Istanbul">Istanbul &nbsp; &nbsp; &nbsp;</label>
+                        <input type="checkbox" name="td" id="Paris"> 
+                        <label for="Paris">Paris &nbsp; &nbsp; &nbsp;</label>
+                        <input type="checkbox" name="td" id="Bali">
+                        <label for="Bali">Bali &nbsp;<br></label>
+                        <input type="checkbox" name="td" id="Dubai"> 
+                        <label for="Dubai">Dubai &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="checkbox" name="td" id="Maldives"> 
+                        <label for="Maldives">Maldives &nbsp; &nbsp; &nbsp;&nbsp;</label>
+                        <input type="checkbox" name="td" id="Bhutan"> 
+                        <label for="Bhutan">Bhutan &nbsp;<br></label>
+                        <input type="checkbox" name="td" id="Rome">
+                        <label for="Rome">Rome &nbsp; &nbsp; &nbsp;</label>
+                        <br> <br>
+                        <h4>Package</h4>
+                        <input type="radio" name="locations" id="loc1" required=""> 
+                        <label for="loc1">Bronze &nbsp; &nbsp; &nbsp;</label>
+                        <input type="radio" name="locations" id="Silver"> 
+                        <label for="Silver">Silver &nbsp; &nbsp; &nbsp;</label>
+                        <input type="radio" name="locations" id="Gold"> 
+                        <label for="Gold">Gold &nbsp; &nbsp; &nbsp;</label>
+                        <input type="radio" name="locations" id="Platinum">
+                        <label for="Platinum"> Platinum &nbsp; &nbsp; &nbsp;</label>
+                        <br> <br>
+                        <input type="checkbox" name="t&amp;c" id="a2" checked="" required=""> I accept the Terms &amp; Conditions.
+                        <br> <br>
+                        <input type="submit" value="Submit" class="submitbtn">
+                        
+                     </div>
+                    </form>
+                </div>
+            </section><br>
+        </div>
+            <!-- footer -->
+            <footer class="py-4">
+                <div class="container footer-row">
+                    <div class="footer-item">
+                        <a href="index.html" class="site-brand">
+                            Trip<span>Boss</span>
+                        </a>
+                        <p class="text">Take in the beauty of it all wild rivers, scenic bikeways, mountain vistas, abundant farmlands and show your love for the people who make this place so special.</p>
+                    </div>
+
+                    <div class="footer-item">
+                        <h2>Follow us on: </h2>
+                        <ul class="social-links">
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.pinterest.com" target="_blank">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com" target="_blank">
+                                    <i class="fab fa-google-plus"></i>
+                                </a>
+                            </li>
+                        </ul>
+    
+                        <div>
+                            <i class="fa fa-phone"></i> +91 9673480291 <br><br>
+                            <i class="fa fa-envelope"></i> info@gmail.com
+                        </div>
+                    </div>
+
+                    <div class="footer-item">
+                        <h2>Popular Places:</h2>
+                        <ul>
+                            <li><a href="#">Thailand</a></li>
+                            <li><a href="#">Australia</a></li>
+                            <li><a href="#">Maldives</a></li>
+                            <li><a href="#">Switzerland</a></li>
+                            <li><a href="#">Germany</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="subscribe-form footer-item">
+                        <h2>Subscribe for Newsletter!</h2>
+                        <form class="flex">
+                            <input type="email" placeholder="Enter Email" class="form-control">
+                            <input type="submit" class="btn" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p>Copyright Module ©. All Rights Reserved.</p>
+                </div>
+            </footer>
+            <!-- js -->
+
+
+            <script src="js/script.js"></script>
+       
+    </section>
+
+
+</body></html>
